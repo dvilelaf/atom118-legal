@@ -39,7 +39,7 @@ footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--border);color
 <main>
 <header>
 <h1>Política de privacidad de Atom 118</h1>
-<p class="dates"><strong>Fecha efectiva:</strong> 29 de septiembre de 2026 · <strong>Última actualización:</strong> 29 de septiembre de 2026</p>
+<p class="dates"><strong>Fecha efectiva:</strong> 29 de septiembre de 2026 · <strong>Última actualización:</strong> 1 de octubre de 2026</p>
 </header>
 
 
@@ -67,13 +67,13 @@ footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--border);color
 <li>datos de pago, tarjetas o información financiera;</li>
 <li>datos de salud, biométricos ni categorías especiales de datos.</li>
 </ul>
-<p>El juego no abre conexiones de red para funcionar. En Android el permiso de Internet está <strong>desactivado</strong> (<code>permissions/internet=false</code>). En iOS la app no solicita ningún permiso sensible sobre datos personales.</p>
+<p>El juego no hace llamadas de red propias para funcionar. En Android el paquete declara los permisos <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> y <code>com.android.vending.BILLING</code>, que añade la librería Google Play Billing para gestionar las compras; ese tráfico lo realiza Google Play y no incluye datos del juego. En iOS la app no solicita ningún permiso sensible sobre datos personales.</p>
 <p><strong>No realizamos perfilado, seguimiento entre apps o sitios, ni publicidad personalizada.</strong> Por ello tampoco se muestra el aviso de App Tracking Transparency (ATT): no hay nada que rastrear.</p>
 
 <h2>4. Qué se guarda y dónde (almacenamiento local)</h2>
 <p>Atom 118 guarda un conjunto mínimo de datos de juego en el <strong>almacenamiento privado de la aplicación</strong> (<code>user://</code>):</p>
 <ul>
-<li><strong>Ajustes:</strong> música, efectos de sonido, efectos reducidos, modo (Normal/práctica) e idioma.</li>
+<li><strong>Ajustes:</strong> música, efectos de sonido, modo (Normal/práctica) e idioma.</li>
 <li><strong>Récord:</strong> puntuación máxima, únicamente en modo Normal.</li>
 <li><strong>Partida en curso:</strong> estado de recuperación (átomo, secuencia, inestabilidad y encuentro radiactivo) guardado en puntos seguros y al suspender.</li>
 </ul>
@@ -89,7 +89,7 @@ footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--border);color
 <ul>
 <li>El pago lo procesa <strong>Apple</strong> (App Store/StoreKit) en iOS y <strong>Google</strong> (Google Play/Play Billing) en Android.</li>
 <li>El desarrollador <strong>no recibe ni ve datos de pago</strong> (tarjeta, facturación o identidad del comprador).</li>
-<li>La app <strong>solo consulta</strong> a la tienda si la compra está desbloqueada y guarda ese estado localmente. No crea un perfil de compra ni lo envía a ningún servidor.</li>
+<li>La app <strong>solo consulta</strong> a la tienda (a través de Apple o Google Play) si la compra está desbloqueada y guarda ese estado localmente. No crea un perfil de compra ni lo envía a ningún servidor del desarrollador.</li>
 <li>Apple y Google tratan los datos necesarios para la compra como responsables independientes, bajo sus políticas: <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a>.</li>
 </ul>
 
